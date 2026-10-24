@@ -9,7 +9,6 @@ start:
   call start_kernel
 
 ; return in a the first sector of the file called '_k'
-; note: only supports disks with < 16 files on disk before '_k'
 ; clobbers: a,b,de,hl
 find_kernel:
   ld   hl,finding_msg
